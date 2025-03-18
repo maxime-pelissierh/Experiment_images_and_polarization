@@ -1,0 +1,186 @@
+\documentclass[12pt]{article}
+
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\def\ifstars#1{#1}
+\usepackage{amsmath,amsfonts,amsthm,amssymb}
+\usepackage{setspace}
+\usepackage{graphicx,wrapfig}
+\usepackage{natbib}
+\usepackage{hyperref}
+\usepackage{lscape}
+\usepackage{fancyhdr}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage{rotating}
+\usepackage{placeins}
+\usepackage{tabularx}
+\usepackage{tabulary}
+\usepackage{array}
+\usepackage{datetime}
+\usepackage{pdflscape}
+\usepackage{chngcntr}
+\usepackage{comment}
+\usepackage{multicol}
+\usepackage{lipsum}
+\usepackage{cleveref}
+\usepackage{titling}
+\usepackage{enumitem}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\bibliographystyle{unsrtnat}
+%\title{Bibliography management: \texttt{natbib} package}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{subcaption}
+\usepackage[capposition=top]{floatrow}
+\usepackage{adjustbox}
+\newcolumntype{H}{>{\setbox0=\hbox\bgroup}c<{\egroup}@{}}
+\usepackage{accents}
+\usepackage{longtable}
+\usepackage{todonotes}
+%\newcommand{\TODO}[1]{\todo[color=orange!40, inline]{\footnotesize \textbf{TODO} #1}}
+\usepackage[labelsep=period]{caption}
+\usepackage{etoc}
+\usepackage[hmargin=1in,vmargin=1in]{geometry}
+\usepackage{eurosym}
+\newdateformat{mydate}{\monthname[\THEMONTH] \THEYEAR}
+\makeatletter
+\newcommand{\thickhline}{%
+    \noalign {\ifnum 0=`}\fi \hrule height 1.5pt \vspace{0.3em}
+    \futurelet \reserved@a \@xhline
+}
+\newcommand\tstrut{\rule{0pt}{2.7ex}}
+\newcommand\bstrut{\rule[-1.0ex]{0pt}{0pt}}
+\usepackage{titletoc}
+\setcounter{MaxMatrixCols}{10}
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\hypersetup{
+colorlinks,
+citecolor=black,
+linkcolor=black,
+urlcolor=black}
+
+\newsavebox{\tablebox}
+\newlength{\tableboxwidth}
+\renewcommand{\footnotesize}{\scriptsize}
+\makeatletter
+
+\newcommand\appendix@section[1]{%
+  \refstepcounter{section}%
+  \orig@section*{Appendix \@Alph\c@section: #1}%
+  \addcontentsline{toc}{section}{Appendix \@Alph\c@section: #1}%
+}
+\let\orig@section\section
+\g@addto@macro\appendix{\let\section\appendix@section}
+\makeatother
+
+\title{Images and Polarization}
+\author{Raphael Brade \thanks{\scriptsize{Ifo Institute,}} \and {Annalí Casanueva-Artís \thanks{\scriptsize{Ifo Institute, Big Data Junior Research Group \& Center for Industrial Organization and New Technologies}}} \and {Maxime Pélissier Hermitte \thanks{\scriptsize{Bordeaux School of Economics}}}\and  {Mateusz Stalinski \thanks{\scriptsize{University of Warwick and CAGE, mateusz.stalinski@warwick.ac.uk}}}}
+
+
+\date{February 2025 \\ \vspace{2cm} \textit{preliminary draft \\ --please do not circulate--}}
+
+\begin{document}
+
+\maketitle
+
+
+\begin{abstract}
+\noindent 
+
+
+ 
+
+\end{abstract}
+
+
+\textbf{\medskip{}
+}
+
+\noindent\textbf{Keywords:} \\
+\textbf{JEL classification:} 
+
+
+\thispagestyle{empty}
+\setcounter{page}{0}%
+%\addtocontents{toc}{\setcounter{tocdepth}{-10}}
+\newpage
+
+\onehalfspacing
+
+\section*{Design Notes}
+
+\subsection*{Simple Controlled Experiment}
+
+First, we are interested in demonstrating that images enhance the effects of information on users, including their emotional reaction, persuasion, affect towards those who agree/disagree, and recall of information. The information will be on a policy issue with an intention to persuade.
+
+\vspace{1em}
+
+\noindent We consider the following treatments:
+\begin{itemize}[noitemsep,nolistsep]
+    \item Text information,
+    \item Text information + Polarizing image,
+    \item Text information + Placebo image (not polarizing),
+    \item Image of the text.
+\end{itemize}
+
+\vspace{1em}
+
+\noindent We need to be careful about the distinction between (a) the direct effect of the image on the outcomes and (b) its role as a moderator of the effect of the text information.
+
+tackle effemeral effects issue by focusing on outcomes of sharing/commenting/donations
+
+\section{Introduction}
+
+
+
+\section{Literature review}
+
+
+\section{Empirical strategy}
+
+
+\section{Results}
+
+
+
+
+\subsection{Short term} 
+Mostly emotional reactions 
+
+
+\subsection{Long term}
+
+
+
+\section{Conclusion}
+
+
+\section{Discussion}
+
+
+\bibliography{main}
+
+\end{document}
